@@ -14,5 +14,13 @@ router.get('/web_embed_2', function(req, res, next) {
   res.render('web_embed_2');
 });
 
+router.get('/web_embed_2-1', function(req, res, next) {
+  res.render('web_embed_2-1');
+});
+
+router.get('/web_embed_2-2', function(req, res, next) {
+  res.render('web_embed_2-2');
+});
+
 module.exports = router;
 
