@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Web Embed</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-  <div id='instavr_container' style='width: 500px; height: 300px;'></div>
-  <div id='instavr_container_2' style='width: 500px; height: 300px;'></div>
-  <div id='instavr_container_3' style='width: 500px; height: 300px;'></div>
-  <script id='instavr_src' src='https://tayutaedomo-instavr-web-embed.herokuapp.com/resources/web_embed_5/instavr.min.js'></script>
-  <script>
-    var cdn = 'https://tayutaedomo-instavr-web-embed.herokuapp.com/resources/web_embed_5';
-    InstavrViewer.embed('8EYZ4Q2iIXCDDEEGZ4W3ZC7yS3pmC4', { container_id: 'instavr_container', cdn: cdn });
-    //InstavrViewer.embed('8EYZ4Q2iIXCDDEEGZ4W3ZC7yS3pmC4', { container_id: 'instavr_container_2', scene: 'k9qDAFc2Rp' });
-    //InstavrViewer.embed('8EYZ4Q2iIXCDDEEGZ4W3ZC7yS3pmC4', { container_id: 'instavr_container_3', scene: 'V8ICXznHbA' });
-  </script>
-</body>
-</html>
+<% layout('layout') %>
+
+<div id='instavr_container' style='width: 500px; height: 300px;'></div>
+<div id='instavr_container_2' style='width: 500px; height: 300px;'></div>
+<div id='instavr_container_3' style='width: 500px; height: 300px;'></div>
+<script id='instavr_src' src='https://tayutaedomo-instavr-web-embed.herokuapp.com/resources/web_embed_5/instavr.min.js'></script>
+<script>
+  var cdn = 'https://tayutaedomo-instavr-web-embed.herokuapp.com/resources/web_embed_5';
+  InstavrViewer.embed('8EYZ4Q2iIXCDDEEGZ4W3ZC7yS3pmC4', { container_id: 'instavr_container', cdn: cdn });
+  //InstavrViewer.embed('8EYZ4Q2iIXCDDEEGZ4W3ZC7yS3pmC4', { container_id: 'instavr_container_2', scene: 'k9qDAFc2Rp' });
+  //InstavrViewer.embed('8EYZ4Q2iIXCDDEEGZ4W3ZC7yS3pmC4', { container_id: 'instavr_container_3', scene: 'V8ICXznHbA' });
+</script>
 
