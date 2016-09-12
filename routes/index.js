@@ -9,6 +9,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: title });
 });
 
+router.get('/web_embed_local', function(req, res, next) {
+  res.render('web_embed_local', { title : 'Web Embed | ' + title });
+});
+
 router.get('/web_embed', function(req, res, next) {
   res.render('web_embed', { title : 'Web Embed | ' + title });
 });
