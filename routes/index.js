@@ -53,6 +53,10 @@ router.get('/web_embed_8', function(req, res, next) {
   res.render('web_embed_8', { title : 'Web Embed 8 | ' + title });
 });
 
+router.get('/web_embed_9', function(req, res, next) {
+  res.render('web_embed_9', { title : 'Web Embed 9 | ' + title });
+});
+
 
 module.exports = router;
 
