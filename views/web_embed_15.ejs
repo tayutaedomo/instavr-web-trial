@@ -1,0 +1,11 @@
+<% layout('layout') %>
+
+<div id='instavr_container' style='max-width: 500px; max-height: 300px;'></div>
+<script id='instavr_src' type='text/javascript' src='/resources/8EYZ4Q2iIXYzVQG3GkxdPxrLxNMkGN/instavr.min.js'></script>
+<script type='text/javascript'>
+  var cdn = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.port) cdn += ':' + window.location.port;
+  cdn += '/resources/8EYZ4Q2iIXYzVQG3GkxdPxrLxNMkGN';
+  InstavrViewer.embed('8EYZ4Q2iIXYzVQG3GkxdPxrLxNMkGN', {'app_product_name':'VRWebZip','scene_focus_size':'1','':false,'focus_stereo_distance':'0','enable_zoom':true,'enable_gyro':false,'enable_tap':false,'enable_dualview':true,'enable_gyro_by_default':false,'web_zip_packaging':true,'image_quality':'original','video_quality':'12mbps','enable_mobile_video_quality':true,'container_id':'instavr_container','cdn':cdn});
+</script>
+
