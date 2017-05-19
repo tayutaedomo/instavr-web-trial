@@ -85,5 +85,9 @@ router.get('/web_embed_16', function(req, res, next) {
   res.render('web_embed_16', { title : 'Web Embed 16 | ' + title });
 });
 
+router.get('/web_embed_17', function(req, res, next) {
+  res.render('web_embed_17', { title : 'Web Embed 17 | ' + title });
+});
+
 module.exports = router;
 
