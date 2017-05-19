@@ -1,0 +1,11 @@
+<% layout('layout') %>
+
+<div id='instavr_container' style='max-width: 500px; max-height: 300px;'></div>
+<script id='instavr_src' type='text/javascript' src='/resources/ZzcS0l2CpUhHK9soVlhl3Tw3docrZZ/instavr.min.js'></script>
+<script type='text/javascript'>
+  var cdn = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.port) cdn += ':' + window.location.port;
+  cdn += '/resources/ZzcS0l2CpUhHK9soVlhl3Tw3docrZZ';
+  InstavrViewer.embed('ZzcS0l2CpUhHK9soVlhl3Tw3docrZZ', {'enable_skip_home':false,'app_product_name':'VRImagesLocal','permission_call_phone_required':true,'scene_focus_size':'1','':false,'focus_stereo_distance':'0','enable_zoom':true,'enable_gyro':true,'enable_tap':false,'enable_dualview':true,'enable_gyro_by_default':false,'web_zip_packaging':true,'image_quality':'2k','video_quality':'original','enable_mobile_video_quality':true,'container_id':'instavr_container','cdn':cdn});
+</script>
+
