@@ -17,6 +17,10 @@ router.get('/embed/:view', function(req, res) {
   res.render('embed/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
 
+router.get('/signup/:view', function(req, res) {
+  res.render('signup/' + req.params.view, { title : req.params.view + ' | ' + title });
+});
+
 
 module.exports = router;
 

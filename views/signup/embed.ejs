@@ -1,0 +1,54 @@
+<% layout('layout') %>
+
+<button class="btn btn-info instavr-signup-button">Open Sign up Modal</button>
+
+<script type="text/javascript" id="instavr_signup_js" src="https://dev-cdn.instavr.co/public/components/instavr-signup/embed.min.js"></script>
+
+<script type="text/javascript">
+  var handler = window.InstavrSignup.configure({
+    opened: function() {
+      console.log('opened');
+    },
+    closed: function(data) {
+      console.log('closed', data);
+
+      if (data.email) {
+        //window.location.href = '/';
+        if (window._agile) {
+          window._agile.set_email(data.email);
+          window._agile.get_email({
+            success: function(data) {
+              window.location.href = '/';
+            },
+            error: function(data) {
+              window.location.href = '/';
+            }
+          });
+        }
+      }
+    }
+  });
+
+  var elements = document.getElementsByClassName('instavr-signup-button')
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function(e) {
+      handler.open();
+      e.preventDefault();
+    });
+  }
+</script>
+
+
+<script id="_agile_min_js" async type="text/javascript" src="https://d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js"></script>
+<script type="text/javascript">
+  var Agile_API = Agile_API || {};
+  Agile_API.on_after_load = function(){
+    _agile.set_account('vlsmq4iqlhha5p3eskloqgbao2', 'instavr');
+    _agile_set_whitelist('aW5zdGF2cg==');
+    _agile.set_tracking_domain ('instavr.co')
+    _agile.track_page_view();
+    _agile_execute_web_rules();
+    instavr_identify( _agile );
+  };
+</script>
+
