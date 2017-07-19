@@ -13,15 +13,14 @@
       console.log('closed', data);
 
       if (data.email) {
-        //window.location.href = '/';
         if (window._agile) {
           window._agile.set_email(data.email);
           window._agile.get_email({
             success: function(data) {
-              window.location.href = '/';
+              console.log('get_email success', data);
             },
             error: function(data) {
-              window.location.href = '/';
+              console.log('get_email error', data);
             }
           });
         }
