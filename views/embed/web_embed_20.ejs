@@ -1,0 +1,30 @@
+<% layout('layout') %>
+
+<div id='instavr_container' style='width: 500px; height: 300px; max-width: 500px; max-height: 300px;'>
+    <img class='instavr-gyro-close-button' src='/resources/uJULffQGz9iquH63f0unpQXWiJYu3W/images/icon_close.svg' style='display: none; z-index: 10; position: absolute; width: 22px; height: 22px; top: 5px; right: 5px; padding: 22px 4px 4px 22px; background: rgba(0,0,0,0); border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;'>
+</div>
+<script id='instavr_src' type='text/javascript' src='/resources/uJULffQGz9iquH63f0unpQXWiJYu3W/instavr.min.js'></script>
+<script type='text/javascript'>
+  var cdn = window.location.protocol + '//' + window.location.hostname;
+  if (window.location.port) cdn += ':' + window.location.port;
+  cdn += '/resources/uJULffQGz9iquH63f0unpQXWiJYu3W';
+  InstavrViewer.embed('uJULffQGz9iquH63f0unpQXWiJYu3W', {
+    'enable_skip_home':false,
+    'app_product_name':'VRWebDualStg',
+    'scene_focus_size':'1',
+    '':false,'focus_stereo_distance':'0',
+    'enable_zoom':true,
+    'enable_gyro':true,
+    'enable_tap':false,
+    'enable_dualview':true,
+    'enable_gyro_by_default':false,
+    'web_zip_packaging':true,
+    'image_quality':'original',
+    'video_quality':'original',
+    'enable_mobile_video_quality':true,
+    'container_id':'instavr_container',
+    'direction_reversing':false,
+    'cdn':cdn
+  });
+</script>
+
