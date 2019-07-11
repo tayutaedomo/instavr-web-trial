@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var title = 'InstaVR Web Embed Trial';
+var title = 'InstaVR Web Sandbox';
 
 
 /* GET home page. */
@@ -19,6 +19,10 @@ router.get('/embed/:view', function(req, res) {
 
 router.get('/signup/:view', function(req, res) {
   res.render('signup/' + req.params.view, { title : req.params.view + ' | ' + title });
+});
+
+router.get('/dev/:view', function(req, res) {
+  res.render('embed_dev/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
 
 
