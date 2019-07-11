@@ -25,6 +25,10 @@ router.get('/dev/:view', function(req, res) {
   res.render('embed_dev/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
 
+router.get('/webzip_dev/:view', function(req, res) {
+  res.render('webzip_dev/' + req.params.view, { title : req.params.view + ' | ' + title });
+});
+
 
 module.exports = router;
 
