@@ -21,7 +21,7 @@ router.get('/signup/:view', function(req, res) {
   res.render('signup/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
 
-router.get('/dev/:view', function(req, res) {
+router.get('/embed_dev/:view', function(req, res) {
   res.render('embed_dev/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
 
