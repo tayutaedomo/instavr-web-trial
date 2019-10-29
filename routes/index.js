@@ -21,6 +21,10 @@ router.get('/signup/:view', function(req, res) {
   res.render('signup/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
 
+router.get('/embed_local/:view', function(req, res) {
+  res.render('embed_local/' + req.params.view, { title : req.params.view + ' | ' + title });
+});
+
 router.get('/embed_dev/:view', function(req, res) {
   res.render('embed_dev/' + req.params.view, { title : req.params.view + ' | ' + title });
 });
